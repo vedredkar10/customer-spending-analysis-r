@@ -1,37 +1,99 @@
-# customer-spending-analysis-r
-R project analyzing wholesale customer spending patterns using descriptive stats, probability distributions, and logistic regression for targeted marketing insights.
+# Customer Spending Analysis in R
+
+A comprehensive data analysis project using R to explore wholesale customer spending patterns. The project combines **descriptive statistics**, **probability modeling**, **logistic regression**, and **statistical testing** to uncover actionable business insights that can support **targeted marketing**, **inventory optimization**, and **regional growth strategies**.
+
+---
+
 ## Project Overview
-This project analyzes customer spending behavior in the wholesale dataset using **R**.  
-The goal was to identify high-value customer segments, regional differences, and product-category insights that can support **targeted marketing strategies and better resource allocation**.  
+This project analyzes wholesale customer data to:
+- Identify **high-value customer segments**.
+- Understand **regional differences** in spending behavior.
+- Determine **key product drivers** influencing customer type (Hotel/Restaurant/Café vs. Retail).
+- Forecast customer spending using **probability distributions**.
 
-## Tools & Libraries
-- R (dplyr, ggplot2, stats, caret)
-- Statistical methods: Descriptive analysis, Probability distributions (Gamma), Logistic Regression, ANOVA
-- Visualization: Histograms, Correlation Matrix, Boxplots
+The analysis leverages advanced statistical techniques and visualizations to help wholesalers make **data-driven decisions** on marketing campaigns, product allocation, and regional strategies.
 
-## Key Steps
-1. **Data Preprocessing** – cleaned data, checked structure, handled missing values  
-2. **Exploratory Data Analysis (EDA)** – descriptive stats, regional spending patterns, customer segmentation  
-3. **Data Visualization** – histograms, correlation heatmaps, boxplots  
-4. **Probability Distribution Fitting** – modeled `Fresh` spending with Gamma distribution to predict high-spending customers  
-5. **Logistic Regression** – identified `Detergent` spending as the strongest predictor of customer channel with **~90% accuracy**  
-6. **Regional Analysis** – ANOVA and t-tests to compare spending across Lisbon, Porto, and rest of Portugal  
+---
 
 ## Key Insights
-- **High variability** in fresh and grocery spending → opportunity for targeted promotions  
-- **Detergent spend** is the best predictor of customer type (Hotel/Restaurant/Café vs Retail)  
-- **Rest of Portugal** customers spend the most on fresh and delicatessen → ideal region for growth campaigns  
-- **Probability forecasts** show ~45% chance of customers spending > €10,000 annually on fresh products  
+- **High variability in Fresh and Grocery spending**  
+  → Indicates diverse purchasing patterns and opportunities for targeted promotions.
+
+- **Detergent spending as the strongest predictor of customer channel**  
+  → Logistic regression achieved up to **89.7% accuracy** in predicting whether a customer belongs to the HoReCa or Retail channel.
+
+- **Regional growth opportunities**  
+  → *Rest of Portugal* customers have the highest spending on Fresh and Delicatessen categories, making them ideal for growth campaigns.
+
+- **Spending probability forecasting**  
+  → **45.5% probability** that customers spend over **€10,000 annually** on Fresh products, providing key insights for inventory planning and promotions.
+
+---
+
+## Methodology
+The project was structured into the following key steps:
+
+1. **Data Preprocessing**
+   - Checked data structure and handled missing values.
+   - Sampled data for efficient analysis.
+
+2. **Exploratory Data Analysis (EDA)**
+   - Summary statistics and regional spending comparisons.
+   - Segmentation by customer type and region.
+
+3. **Data Visualization**
+   - Histograms for univariate analysis.
+   - Correlation matrix to identify relationships between spending categories.
+   - Boxplots for regional and channel-based analysis.
+
+4. **Probability Distribution Modeling**
+   - Modeled Fresh spending using **Gamma distribution** to forecast high-spending customers.
+
+5. **Logistic Regression**
+   - Identified **Detergent** as the most significant variable for predicting customer type.
+   - Improved model accuracy by focusing on key predictors.
+
+6. **Regional Analysis**
+   - Conducted **ANOVA** and **pairwise t-tests** to evaluate differences in regional spending patterns.
+
+---
+
+## Tools & Technologies
+- **Programming Language:** R  
+- **Libraries Used:**  
+  `dplyr`, `ggplot2`, `caret`, `tclust`, `fitdistrplus`, `corrplot`
+- **Statistical Methods:**
+  - Descriptive Statistics
+  - Probability Distributions (Gamma, Log-normal)
+  - Logistic Regression
+  - ANOVA and Pairwise T-tests
+
+---
+
+## Results
+| Analysis Area            | Key Outcome |
+|--------------------------|-------------|
+| Logistic Regression      | Detergent spending predicts channel type with **89.7% accuracy** |
+| Probability Forecasting  | **45.5% chance** of customers spending > €10,000 annually on Fresh products |
+| Regional Analysis        | Rest of Portugal is the highest spending region for Fresh products |
+| EDA Findings             | Strong positive correlation between Grocery and Detergent spending |
+
+---
 
 ## Repository Structure
 customer-spending-analysis-r/
-│── data/                
-│── scripts/           
-│    ├── data_cleaning.R
-│    ├── eda_visualizations.R
-│    ├── probability_model.R
-│    ├── logistic_regression.R
-│── outputs/
-│    ├── figures/       
-│    ├── reports/        
-│── README.md  
+│
+├── data/                  # Raw and processed datasets
+│
+├── scripts/               # R scripts for each analysis stage
+│   ├── data_cleaning.R
+│   ├── eda_visualizations.R
+│   ├── probability_model.R
+│   ├── logistic_regression.R
+│
+├── outputs/               # Reports and visualizations
+│   ├── figures/
+│   ├── reports/
+│
+└── README.md              # Project documentation
+
