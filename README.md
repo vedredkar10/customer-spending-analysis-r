@@ -81,7 +81,6 @@ The project was structured into the following key steps:
 ---
 
 ## Repository Structure
-## Repository Structure
 ```
 customer-spending-analysis-r/
 │
