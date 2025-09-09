@@ -81,19 +81,21 @@ The project was structured into the following key steps:
 ---
 
 ## Repository Structure
+## Repository Structure
+```
 customer-spending-analysis-r/
 │
-├── data/ # Raw and processed datasets
+├── data/                  # Raw and processed datasets
 │
-├── scripts/ # R scripts for each analysis stage
-│ ├── data_cleaning.R
-│ ├── eda_visualizations.R
-│ ├── probability_model.R
-│ └── logistic_regression.R
+├── scripts/               # R scripts for each analysis stage
+│   ├── data_cleaning.R
+│   ├── eda_visualizations.R
+│   ├── probability_model.R
+│   └── logistic_regression.R
 │
-├── outputs/ # Reports and visualizations
-│ ├── figures/ # Saved plots
-│ └── reports/ # Final reports or documents
+├── outputs/               # Reports and visualizations
+│   ├── figures/           # Saved plots
+│   └── reports/           # Final reports or documents
 │
-└── README.md # Project documentation
-
+└── README.md              # Project documentation
+```
