@@ -77,6 +77,8 @@ The project was structured into the following key steps:
 | Probability Forecasting  | **45.5% chance** of customers spending > €10,000 annually on Fresh products |
 | Regional Analysis        | Rest of Portugal is the highest spending region for Fresh products |
 | EDA Findings             | Strong positive correlation between Grocery and Detergent spending |
+<img width="635" height="251" alt="Image5_CSA" src="https://github.com/user-attachments/assets/facb049c-6db3-4701-b3a8-ac9786e0bacb" />
+<img width="816" height="173" alt="Image6_CSA" src="https://github.com/user-attachments/assets/12289b8b-c3f9-42af-975d-1d0cc76f64c9" />
 
 ---
 
